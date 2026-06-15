@@ -822,7 +822,8 @@ async function executeCommand(line) {
 
 async function evaluateQuery(queryStr) {
   try {
-    const result = await eval(`(async function(db, console) { ${queryStr} })(dbProxy, console)`);
+    const trimmed = queryStr.trim().replace(/;+$/, '');
+    const result = await eval(`(async function(db, console) { return ${trimmed}; })(dbProxy, console)`);
     return result;
   } catch (e) {
     console.log(chalk.red(`错误: ${e.message}`));
