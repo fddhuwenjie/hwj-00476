@@ -1,0 +1,4 @@
+node_modules/
+*.db
+.query_history.json
+.saved_scripts.json

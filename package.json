@@ -1,0 +1,26 @@
+{
+  "name": "hwj-00476",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fddhuwenjie/hwj-00476.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/fddhuwenjie/hwj-00476/issues"
+  },
+  "homepage": "https://github.com/fddhuwenjie/hwj-00476#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cli-table3": "^0.6.5",
+    "sqlite3": "^6.0.1"
+  }
+}
