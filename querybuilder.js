@@ -822,8 +822,7 @@ async function executeCommand(line) {
 
 async function evaluateQuery(queryStr) {
   try {
-    const context = { db: dbProxy, console };
-    const result = await eval(`(async function(db, console) { ${queryStr} })(db, console)`);
+    const result = await eval(`(async function(db, console) { ${queryStr} })(dbProxy, console)`);
     return result;
   } catch (e) {
     console.log(chalk.red(`错误: ${e.message}`));
